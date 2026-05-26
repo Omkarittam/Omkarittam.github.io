@@ -12,6 +12,7 @@
 <header>
   <nav class="navbar">
     <h2 class="logo">Omkar Ittam</h2>
+
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -19,7 +20,10 @@
       <li><a href="#phases">Project Phases</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+
+    <button class="menu-btn">
+      <i class="fa-solid fa-bars"></i>
+    </button>
   </nav>
 </header>
 
@@ -67,10 +71,10 @@
   <h2>Project Phases</h2>
 
   <div class="tabs">
-    <button class="tab-btn active" onclick="showPhase('phase1')">Phase 1</button>
-    <button class="tab-btn" onclick="showPhase('phase2')">Phase 2</button>
-    <button class="tab-btn" onclick="showPhase('phase3')">Phase 3</button>
-    <button class="tab-btn" onclick="showPhase('phase4')">Phase 4</button>
+    <button class="tab-btn active" onclick="showPhase('phase1', this)">Phase 1</button>
+    <button class="tab-btn" onclick="showPhase('phase2', this)">Phase 2</button>
+    <button class="tab-btn" onclick="showPhase('phase3', this)">Phase 3</button>
+    <button class="tab-btn" onclick="showPhase('phase4', this)">Phase 4</button>
   </div>
 
   <div id="phase1" class="phase-content active">
@@ -98,9 +102,20 @@
   <h2>Contact</h2>
 
   <div class="contact-box">
-    <p><i class="fa-solid fa-envelope"></i> omkarittam163@gmail.com</p>
-    <p><i class="fa-brands fa-github"></i> <a href="https://github.com/Omkarittam" target="_blank">GitHub</a></p>
-    <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/omkar-ittam-3b915b3ba/" target="_blank">LinkedIn</a></p>
+    <p>
+      <i class="fa-solid fa-envelope"></i>
+      <a href="mailto:omkarittam163@gmail.com">Gmail</a>
+    </p>
+
+    <p>
+      <i class="fa-brands fa-github"></i>
+      <a href="https://github.com/Omkarittam" target="_blank">GitHub</a>
+    </p>
+
+    <p>
+      <i class="fa-brands fa-linkedin"></i>
+      <a href="https://www.linkedin.com/in/omkar-ittam-3b915b3ba/" target="_blank">LinkedIn</a>
+    </p>
   </div>
 </section>
 
