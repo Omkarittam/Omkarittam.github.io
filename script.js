@@ -5,7 +5,7 @@ menuBtn.addEventListener("click", () => {
   navLinks.classList.toggle("show");
 });
 
-function showPhase(phaseId) {
+function showPhase(phaseId, button) {
   const contents = document.querySelectorAll(".phase-content");
   const buttons = document.querySelectorAll(".tab-btn");
 
@@ -13,10 +13,10 @@ function showPhase(phaseId) {
     content.classList.remove("active");
   });
 
-  buttons.forEach(button => {
-    button.classList.remove("active");
+  buttons.forEach(btn => {
+    btn.classList.remove("active");
   });
 
   document.getElementById(phaseId).classList.add("active");
-  event.target.classList.add("active");
+  button.classList.add("active");
 }
